@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* common */
+.wrapper{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    max-width: 1028px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+header{
+    padding: 51px 0 22px;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    background-image: url(../img/logo.svg);
+    height: 47px;
+    width: 53px;
+}
+.logo-link:hover .logo{
+    background-image: url(../img/logo-hover.svg);
+}
+.logo-link{
+    display: flex;
+}
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 29px;
+    color: #fff;
+}
+.header-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    margin-top: 4px;
+}
+.logo-link>div{
+    margin-left: 8px;
+}
+.logo-link:hover h1 {
+    color: #F26522;
+}
+.logo-link:hover .header-text{
+    color: #F26522;
+}
+.header-wrapper>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.header-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+}
+.header-link:hover{
+    color: #F26522;
+}
+/* main */
+.main-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(2, 1fr) ;
+    column-gap: 61px ;
+    row-gap: 37px;
+}
+h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+.hovered-block{
+    height: 55px;
+    width: 90%;
+    background-color: #F26522;
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 7px 14px 0 16px;
+    display: none;
+    position: absolute;
+    bottom: 40px;
+}
+.hovered-from >p:first-child {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #fff;
+    padding-bottom: 8px;
+}
+.hovered-from >p:nth-child(2){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+.hovered-details{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    padding-top: 22px;
+    padding-right: 26px;
+    position: relative;
+}
+.hovered-details::after{
+    content: url(../img/arrow.svg);
+    position: absolute;
+    right: 0px;
+}
+img{
+    width: 100%;
+    height: 220px;
+}
+.main-item{
+    position: relative;
+    
+}
+.main-item:hover .hovered-block{
+    display: flex;
+    transition: 1s linear;
+}
+.main-item:hover h4{
+    color: #F26522;
+}
+/* footer */
+footer{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+     font-size: 12px;
+    line-height: 12px;  
+    margin-top: 49px;
+}
+
